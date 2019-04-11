@@ -30,4 +30,19 @@ $(document).ready(function () {
   $(document).on('click', '.mortgage-container-row-container', function () {
     window.location.href = $(this).data('link');                                     
 });
+  $('.mortgage-description-head').closest('.content').find('.breadcrumbs').css('background', 'rgba(41,157,55,0.15)');
+
+  var button = $(".mortgage-description-info").find('.mortgage-description-info-column').eq(0);  
+  var button_height = $('.mortgage-description-other').offset().top - 175;          
+  $(window).scroll(function(){
+            if($(window).width()<768) {              
+              if ( $(this).scrollTop() >= button_height - $('.mortgage-description-other').height()){                
+                button.css('position', 'absolute').css('top', button_height).css('bottom', 'unset');
+            } else if($(this).scrollTop() < button_height - $('.mortgage-description-other').height()) {
+                button.css('position', 'fixed').css('bottom', '115px').css('top', 'unset');
+            }
+            }
+  });
+
+
 });

@@ -1,3 +1,6 @@
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -153,3 +156,7 @@
     <script src="assets/scripts/myscript.js">       </script>
   </body>
 </html>
+
+
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

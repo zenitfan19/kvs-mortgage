@@ -1,15 +1,14 @@
 extends ../template
 
 block variables
-    - var title = 'Титов'    
+    - var title = 'Ипотека сбербанк'    
 
 block content
-    .mortgage-description-head
-        .breadcrumbs
-            span хлебные крошки
+    .mortgage-description-head        
         .mortgage-description-box
             .mortgage-description-img
                 img(src="assets/images/sberbank-icon.svg", alt="")
+                span.mobile СБЕРБАНК РОССИИ
             .mortgage-description-text-info
                 .mortgage-description-title
                     .mortgage-description-title__bank
@@ -33,7 +32,7 @@ block content
                         .mortgage-description-info-column-row
                             span Ставка
                         .mortgage-description-info-column-row
-                            span 6%
+                            span 6%                        
     .mortgage-description-text
         .mortgage-description-text-block
             .mortgage-description-text-block-title
@@ -95,7 +94,7 @@ block content
         .mortgage-description-other-box
             .mortgage-description-other-title
                 span Другие программы от Сбербанка
-            .mortgage-container-row-container(data-link="mortgage-description.html")
+            .mortgage-container-row-container(data-link="mortgage-description.php")
                 .mortgage-container-row-container-row
                     .mortgage-container-row-container-row-column                        
                         span ПРОГРАММА
@@ -105,6 +104,8 @@ block content
                         span СРОК
                     .mortgage-container-row-container-row-column
                         span СТАВКА
+                    .mortgage-container-row-container-row-column.mobile
+                        span Акция на новостройки
                 .mortgage-container-row-container-row
                     .mortgage-container-row-container-row-column                        
                         span Акция на новостройки
@@ -114,7 +115,13 @@ block content
                         span 1-30 лет
                     .mortgage-container-row-container-row-column
                         span 10.5%
-            .mortgage-container-row-container(data-link="mortgage-description.html")
+                    .mortgage-container-row-container-row-column.mobile
+                        span ПЕРВОНАЧАЛЬНЫЙ ВЗНОС
+                    .mortgage-container-row-container-row-column.mobile
+                        span СРОК
+                    .mortgage-container-row-container-row-column.mobile
+                        span СТАВКА
+            .mortgage-container-row-container(data-link="mortgage-description.php")
                 .mortgage-container-row-container-row
                     .mortgage-container-row-container-row-column                        
                         span ПРОГРАММА
@@ -124,6 +131,8 @@ block content
                         span СРОК
                     .mortgage-container-row-container-row-column
                         span СТАВКА
+                    .mortgage-container-row-container-row-column.mobile
+                        span Акция на новостройки
                 .mortgage-container-row-container-row
                     .mortgage-container-row-container-row-column                        
                         span Акция на новостройки
@@ -133,6 +142,12 @@ block content
                         span 1-30 лет
                     .mortgage-container-row-container-row-column
                         span 10.5%
+                    .mortgage-container-row-container-row-column.mobile
+                        span ПЕРВОНАЧАЛЬНЫЙ ВЗНОС
+                    .mortgage-container-row-container-row-column.mobile
+                        span СРОК
+                    .mortgage-container-row-container-row-column.mobile
+                        span СТАВКА
 
 
 
