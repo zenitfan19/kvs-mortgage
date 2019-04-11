@@ -1,0 +1,139 @@
+extends ../template
+
+block variables
+    - var title = 'Титов'    
+
+block content
+    .mortgage-description-head
+        .breadcrumbs
+            span хлебные крошки
+        .mortgage-description-box
+            .mortgage-description-img
+                img(src="assets/images/sberbank-icon.svg", alt="")
+            .mortgage-description-text-info
+                .mortgage-description-title
+                    .mortgage-description-title__bank
+                        span СБЕРБАНК РОССИИ
+                    .mortgage-description-title__program
+                        span Ипотека с государственной поддержкой для семей с детьми
+                .mortgage-description-info
+                    .mortgage-description-info-column
+                        a(href="") Подать заявку
+                    .mortgage-description-info-column
+                        .mortgage-description-info-column-row
+                            span Первоначальный взнос
+                        .mortgage-description-info-column-row
+                            span от 20%
+                    .mortgage-description-info-column
+                        .mortgage-description-info-column-row
+                            span Срок
+                        .mortgage-description-info-column-row
+                            span 1-30 лет
+                    .mortgage-description-info-column
+                        .mortgage-description-info-column-row
+                            span Ставка
+                        .mortgage-description-info-column-row
+                            span 6%
+    .mortgage-description-text
+        .mortgage-description-text-block
+            .mortgage-description-text-block-title
+                span Основные условия кредитования
+            .mortgage-description-text-block-main
+                .mortgage-description-text-block-main-item
+                    span — Срок кредита от 1 года до 30 лет.
+                .mortgage-description-text-block-main-item
+                    span — Первоначальный взнос: от 20%
+                .mortgage-description-text-block-main-item
+                    span — Минимальный размер кредита: от 300 000 рублей.
+                .mortgage-description-text-block-main-item
+                    span — Максимальная сумма 12 млн руб. — для г. Москвы, Московской области и г.
+                .mortgage-description-text-block-main-item
+                    span — Санкт-Петербурга, и до 6 млн руб. — для иных субъектов Российской Федерации.
+        .mortgage-description-text-block
+            .mortgage-description-text-block-title
+                span Процентная ставка
+            .mortgage-description-text-block-main
+                .mortgage-description-text-block-main-item
+                    span 6% годовых –установлена на период с 01.01.2018г. по 01.03.2023 г. *
+                .mortgage-description-text-block-main-item
+                    span Период действия процентной ставки (льготный период):
+                .mortgage-description-text-block-main-item
+                    span Для семьи, где второй ребенок родился после 01.01.2018г. – 3 года;
+                .mortgage-description-text-block-main-item
+                    span Для семьи, где третий ребенок родился после 01.01.2018г – 5 лет;
+                .mortgage-description-text-block-main-item
+                    span Для семьи, где второй и третий ребенок родился после 01.01.2018г – 8 лет;
+                .mortgage-description-text-block-main-item
+                    span * Процентная ставка после окончания периода действия льготной ставки:
+                .mortgage-description-text-block-main-item
+                    span По завершении льготного периода, ставка будет установлена в размере ключевой ставки ЦБ РФ,
+                .mortgage-description-text-block-main-item
+                    span действующей на дату заключения кредитного договора, увеличенной на 2 п.п.
+        .mortgage-description-text-block
+            .mortgage-description-text-block-title
+                span Страхование
+            .mortgage-description-text-block-main
+                .mortgage-description-text-block-main-item
+                    span — Имущественное страхование предмета залога после регистрации права собственности Заемщика на жилое помещение и залога жилого помещения
+                .mortgage-description-text-block-main-item
+                    span — Риск утраты жизни и потери трудоспособности (личное страхование)         
+        .mortgage-description-text-block
+            .mortgage-description-text-block-title
+                span Комиссия банка
+            .mortgage-description-text-block-main
+                .mortgage-description-text-block-main-item
+                    span Отсутствует
+    .mortgage-description-objects
+        .mortgage-description-objects-title
+            span Объекты, участвующие в программе
+            a(href="") Все объекты
+        .mortgage-description-objects-container
+            img(src="assets/images/object-1.png", alt="")
+            img(src="assets/images/object-2.png", alt="")
+            img(src="assets/images/object-3.png", alt="")
+    .mortgage-description-other
+        .mortgage-description-other-box
+            .mortgage-description-other-title
+                span Другие программы от Сбербанка
+            .mortgage-container-row-container(data-link="mortgage-description.html")
+                .mortgage-container-row-container-row
+                    .mortgage-container-row-container-row-column                        
+                        span ПРОГРАММА
+                    .mortgage-container-row-container-row-column
+                        span ПЕРВОНАЧАЛЬНЫЙ ВЗНОС
+                    .mortgage-container-row-container-row-column
+                        span СРОК
+                    .mortgage-container-row-container-row-column
+                        span СТАВКА
+                .mortgage-container-row-container-row
+                    .mortgage-container-row-container-row-column                        
+                        span Акция на новостройки
+                    .mortgage-container-row-container-row-column
+                        span от 15%
+                    .mortgage-container-row-container-row-column
+                        span 1-30 лет
+                    .mortgage-container-row-container-row-column
+                        span 10.5%
+            .mortgage-container-row-container(data-link="mortgage-description.html")
+                .mortgage-container-row-container-row
+                    .mortgage-container-row-container-row-column                        
+                        span ПРОГРАММА
+                    .mortgage-container-row-container-row-column
+                        span ПЕРВОНАЧАЛЬНЫЙ ВЗНОС
+                    .mortgage-container-row-container-row-column
+                        span СРОК
+                    .mortgage-container-row-container-row-column
+                        span СТАВКА
+                .mortgage-container-row-container-row
+                    .mortgage-container-row-container-row-column                        
+                        span Акция на новостройки
+                    .mortgage-container-row-container-row-column
+                        span от 15%
+                    .mortgage-container-row-container-row-column
+                        span 1-30 лет
+                    .mortgage-container-row-container-row-column
+                        span 10.5%
+
+
+
+        

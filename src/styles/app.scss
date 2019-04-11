@@ -1,0 +1,16 @@
+@import "vendor/normalize.scss";
+@import "vendor/animate.scss";
+@import "pages/index.scss";
+
+
+@font-face {
+    font-family: SF UI Text;
+    src: url(../fonts/SFUIText-Regular.otf);
+}
+body {
+    font-family: SF UI Text;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+}
