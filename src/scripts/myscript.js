@@ -3,13 +3,20 @@ $(document).ready(function () {
             var block = $(this).closest('.mortgage-container-row');
             var blockId = block.index();
             if(blockId != 0) {
-              $('.mortgage-container-row').not($('.mortgage-container-row').eq(blockId)).removeClass('active');  
+              $('.mortgage-container-row').not($('.mortgage-container-row').eq(blockId)).find('.plus-icon').each(function() {$(this).css('transform', 'rotate(0deg)');});
+              $('.mortgage-container-row').not($('.mortgage-container-row').eq(blockId)).removeClass('active')
+              .find('.mortgage-container-row-container').each(function() {
+                $(this).removeClass('animated fadeInUp');
+                $(this).addClass('animated fadeOutDown');                
+              }); 
             if(!block.hasClass('active')) {
+              block.find('.plus-icon').css('transform', 'rotate(45deg)');
               block.addClass('active');
               block.find('.mortgage-container-row-container').each(function() {
+                $(this).removeClass('animated fadeOutDown');
                 $(this).addClass('animated fadeInUp');
               });
-            } 
+            }
             }                                     
       });  
       $(document).on('click', '.plus-icon', function () {        
@@ -18,12 +25,19 @@ $(document).ready(function () {
         if(blockId != 0) {
           $('.mortgage-container-row').not($('.mortgage-container-row').eq(blockId)).removeClass('active');  
         if(!block.hasClass('active')) {
+          $(this).css('transform', 'rotate(45deg)');
           block.addClass('active');
           block.find('.mortgage-container-row-container').each(function() {
+            $(this).removeClass('animated fadeOutDown');
             $(this).addClass('animated fadeInUp');
           });
-        } else {          
-          setTimeout(function() { block.removeClass('active'); }, 10);          
+        } else {  
+          $(this).css('transform', 'rotate(0deg)');
+          block.find('.mortgage-container-row-container').each(function() {
+            $(this).removeClass('animated fadeInUp');
+            $(this).addClass('animated fadeOutDown');
+          });        
+          setTimeout(function() { block.removeClass('active'); }, 500);          
         } 
         }                                     
   });
